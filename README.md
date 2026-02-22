@@ -1,0 +1,58 @@
+# BIP39 Predict UI
+
+BIP39（Bitcoin Improvement Proposal 39）のニーモニックコード（2048語の単語リスト）を効率的に入力・選択するためのWebアプリケーションです。
+サイバーパンク/ハッカー風のUIで、ウォレットの復元フレーズの入力を補助します。
+
+## 機能
+
+- **インテリジェントな入力補完**: 最初の数文字を入力するだけで、BIP39の単語リストから候補を絞り込みます。
+- **キーボード不要の入力**: 次に入力可能な文字だけがハイライトされ、クリックで入力できます。
+- **24単語対応**: 最大24単語までのフレーズを作成・管理できます。
+- **クリップボードコピー**: 作成したフレーズをワンクリックでコピーできます。
+- **完全ローカル動作**: 外部サーバーへの送信は一切行いません（単語リストの取得のみGitHubの生データにアクセスします）。
+
+## 開発・実行方法
+
+### 必要条件
+
+- Node.js (v18以上推奨)
+
+### インストール
+
+```bash
+npm install
+```
+
+### ローカル開発サーバーの起動
+
+```bash
+npm run dev
+```
+
+### ビルド
+
+```bash
+npm run build
+```
+
+## GitHub Pages への公開方法
+
+このリポジトリには GitHub Actions の設定が含まれており、`main` ブランチにプッシュするだけで自動的に GitHub Pages にデプロイされるように設定されています。
+
+1. GitHub で新しいリポジトリを作成します。
+2. このディレクトリの内容をプッシュします。
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin <あなたのリポジトリURL>
+   git push -u origin main
+   ```
+3. GitHub リポジトリの **Settings** > **Pages** に移動します。
+4. **Build and deployment** の **Source** で **GitHub Actions** を選択します。
+5. Actions のワークフローが完了すると、公開URLが表示されます。
+
+## ライセンス
+
+MIT
