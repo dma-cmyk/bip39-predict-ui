@@ -37,24 +37,6 @@ npm run dev
 npm run build
 ```
 
-## GitHub Pages への公開方法
-
-このリポジトリには GitHub Actions の設定が含まれており、`main` ブランチにプッシュするだけで自動的に GitHub Pages にデプロイされるように設定されています。
-
-1. GitHub で新しいリポジトリを作成します。
-2. このディレクトリの内容をプッシュします。
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin <あなたのリポジトリURL>
-   git push -u origin main
-   ```
-3. GitHub リポジトリの **Settings** > **Pages** に移動します。
-4. **Build and deployment** の **Source** で **GitHub Actions** を選択します。
-5. Actions のワークフローが完了すると、公開URLが表示されます。
-
 ## ライセンス
 
 MIT
