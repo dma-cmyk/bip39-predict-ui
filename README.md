@@ -1,5 +1,7 @@
 # BIP39 Predict UI
 
+![BIP39 Predict UI Screenshot](./public/screenshot.png)
+
 **Demo:** https://dma-cmyk.github.io/bip39-predict-ui/
 
 BIP39（Bitcoin Improvement Proposal 39）のニーモニックコード（2048語の単語リスト）を効率的に入力・選択するためのWebアプリケーションです。
